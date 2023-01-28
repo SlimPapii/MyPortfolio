@@ -9,17 +9,14 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 const Nav = () => {
   const [showLinks, setShowLinks] = useState(false)
   const [openToggle, setOpenToggle] = useState(true)
-  const [closeToggle, setCloseToggle] = useState(true)
 
   const handleOpen = () => {
     setShowLinks(true)
     setOpenToggle(false)
-    setCloseToggle(false)
   }
   const handleClose = () => {
     setShowLinks(false)
     setOpenToggle(true)
-    setCloseToggle(true)
   }
   return (
     <main className='nav_container'>

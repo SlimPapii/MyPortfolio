@@ -1,0 +1,119 @@
+header {
+    height: 100vh;
+    padding-top: 5rem;
+    overflow: hidden;
+}
+.header_container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* ******Header socials********* */
+.header_socialsLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+.header_socialsRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    right: 0;
+    bottom: 3rem;
+}
+.header_socialsLeft::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-bold);
+}
+.header_socialsRight::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-bold);
+}
+
+/* ******Image******* */
+.me{
+    width: 50%;
+    height: 70%;
+    margin-inline: auto;
+    margin-top: 3rem;
+    border-radius: 20rem 0rem 20rem 0rem;
+    overflow: hidden;
+}
+
+/* *******Scroll down******** */
+.scroll_down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+.header_socialsRight>a>svg>path,
+.header_socialsLeft>a>svg>path{
+    color: var(--color-bold);
+}
+/* **********Media Queries (Medium Devices)********* */
+@media screen and (max-width: 1100px) {
+    .me {
+        width: 50%;
+        height: 70%;
+        margin-top: 2rem;
+        border-radius: 12rem 0rem 12rem 0rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    header {
+        height: 100vh;
+    }
+    .me {
+        width: 50%;
+        height: 70%;
+        margin-top: 2rem;
+        border-radius: 12rem 0rem 12rem 0rem;
+    }
+}
+
+/* **********Media Queries (Small Devices)********* */
+@media screen and (max-width: 750px) {
+    .me {
+        width: 65%;
+        height: 65%;
+        margin-top: 2rem;
+        border-radius: 12rem 0rem 12rem 0rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    header{
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 450px) {
+    .header_socialsLeft {
+        display: none;        
+    }
+    .header_socialsLeft::after {
+        content: "";
+        width: 0px;
+        height: 0rem;
+    }
+    .header_socialsRight {
+        display: none;
+    }
+    .header_socialsRight::after {
+        content: "";
+        width: 0px;
+        height: 0rem;
+    }
+}

@@ -1,0 +1,121 @@
+.nav_container{
+    background-color: var(--color-border-cards);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+nav {
+    width: var(--container-width-lg);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.logo {
+    color: var(--color-bold);
+    padding: .7em;
+    font-weight: 500;
+}
+.nav_content{
+    width: 70%;
+    padding: .7em;
+    margin: 0 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_content > a{
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    justify-content: center;
+}
+.nav_toggle {
+    color: var(--color-bold);
+    display: none;
+    padding: .7em;
+    font-weight: 300;
+}
+.nav_toggle>.open {
+    display: none;
+}
+.nav_toggle>.open:hover {
+    transform: scale(1.5);
+    transition: var(--transition);
+}
+.nav_toggle>.close {
+    display: none;
+}
+
+.nav_toggle>.close:hover {
+    transform: scale(1.5);
+    transition: var(--transition);
+}
+
+#root>main>nav>a{
+    color: var(--color-sec-text);
+}
+#root>main>nav>a:hover{
+    transform: rotate(360deg);
+}
+svg,
+path {
+    color: var(--color-sec-text);
+}
+
+/* **********Media Queries (Medium Devices)********* */
+@media screen and (max-width: 1024px) {
+    nav {
+        width: var(--container-width-md);
+        height: 3rem;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+        .nav_show {
+            height: 100%;
+        }
+    nav > a{
+        order: 1;
+    }
+    nav > .nav_content{
+        order: 3;
+        flex: 100%;
+    }
+    nav > .nav_toggle{
+        order: 2;
+    }
+    .nav_toggle {
+        display: block;
+    }
+    .nav_toggle > .open{
+        display: block;
+    }
+        .nav_toggle>.N_open {
+            display: none;
+        }
+        .nav_toggle>.close {
+            display: none;
+        }
+        .nav_toggle>.N_close {
+            display: block;
+        }
+    .nav_content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav_content>a {
+        gap: .5em;
+        padding-block: 1.5rem;
+    }
+}
+
+/* **********Media Queries (Small Devices)********* */
+@media screen and (max-width: 600px) {
+    nav {
+        width: var(--container-width-sm);
+    }
+}

@@ -1,0 +1,150 @@
+/* General CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --color-bg-bgBtn: #e7edeb;
+    --color-text: #6b4f4f;
+    --color-text: #000000;
+    --color-border-cards: #3F7369;
+    --color-cta: #3F1406;
+    --color-cards: #3F7369;
+    --color-bold: #000000;
+    --color-sec-text: #E6E6E6;
+    --color-white: #ffff; 
+
+    --transition: all 400ms ease;
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-bg-bgBtn);
+    color: var(--color-text);
+    line-height: 1.7;
+}
+
+/* ==============GENERAL STYLES================ */
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-weight: 500;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+section{
+    margin-top: 8rem;
+}
+
+section > h2, section > h5 {
+    text-align: center;
+    color: var(--color-text);
+}
+
+section > h2{
+    color: var(--color-bold);
+    margin-bottom: 3rem;
+}
+
+.text-light{
+    color: var(--color-text);
+}
+
+a{
+    color: var(--color-sec-text);
+    transition: var(--transition);
+}
+
+a:hover{
+    transform: scale(1.1);
+}
+
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: var(--color-bold);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-border-cards);
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background: var(--color-white);
+    color: var(--color-bold);
+    border-color: transparent;
+}
+
+.btn-primary{
+    background: var(--color-cta);
+    color: var(--color-white);
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+small{
+    color: var(--color-sec-text);
+}
+
+/* **********Media Queries (Medium Devices)********* */
+@media screen and (max-width: 1024px) {
+    .container{
+        width: var(--container-width-md);
+    }
+    section{
+        margin-top: 6rem;
+    }
+}
+/* **********Media Queries (Small Devices)********* */
+@media screen and (max-width: 600px) {
+    .container{
+        width: var(--container-width-sm);
+    }
+    section > h2{
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 200px) {
+    .container{
+        width: 100%;
+    }
+    section{
+        width: 100%;
+    }
+    section > h2{
+        margin-top: 2rem;
+    }
+}

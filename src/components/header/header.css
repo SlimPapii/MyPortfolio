@@ -1,5 +1,4 @@
 header {
-    height: 100vh;
     padding-top: 5rem;
     overflow: hidden;
 }
@@ -44,7 +43,7 @@ header {
 /* ******Image******* */
 .me{
     width: 50%;
-    height: 70%;
+    height: 35rem;
     margin-inline: auto;
     margin-top: 3rem;
     border-radius: 20rem 0rem 20rem 0rem;
@@ -68,38 +67,32 @@ header {
 @media screen and (max-width: 1100px) {
     .me {
         width: 50%;
-        height: 70%;
+        height: 32rem;
         margin-top: 2rem;
-        border-radius: 12rem 0rem 12rem 0rem;
+        border-radius: 16rem 0rem 16rem 0rem;
     }
 }
 @media screen and (max-width: 1024px) {
-    header {
-        height: 100vh;
-    }
     .me {
         width: 50%;
-        height: 70%;
+        height: 30rem;
         margin-top: 2rem;
-        border-radius: 12rem 0rem 12rem 0rem;
     }
 }
 
 /* **********Media Queries (Small Devices)********* */
 @media screen and (max-width: 750px) {
     .me {
-        width: 65%;
-        height: 65%;
+        width: 75%;
+        height: 25rem;
         margin-top: 2rem;
-        border-radius: 12rem 0rem 12rem 0rem;
     }
 }
-@media screen and (max-width: 600px) {
-    header{
-        height: 100vh;
-    }
-}
+
 @media screen and (max-width: 450px) {
+    .me {
+        width: 90%;
+    }
     .header_socialsLeft {
         display: none;        
     }

@@ -62,7 +62,7 @@ h1{
 }
 
 section{
-    margin-top: 8rem;
+    margin-top: 3.5rem;
 }
 
 section > h2, section > h5 {
@@ -128,14 +128,14 @@ small{
     .container{
         width: var(--container-width-md);
     }
-    section{
-        margin-top: 6rem;
-    }
 }
 /* **********Media Queries (Small Devices)********* */
 @media screen and (max-width: 600px) {
     .container{
         width: var(--container-width-sm);
+    }
+    section {
+    margin-top: 1rem;
     }
     section > h2{
         margin-top: 2rem;

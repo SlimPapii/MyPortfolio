@@ -3,25 +3,33 @@ import './portfolio.css'
 import IMG1 from '../../medias&files/portfolio1.png'
 import IMG2 from '../../medias&files/portfolio2.png'
 import IMG3 from '../../medias&files/portfolio3.png'
+import IMG4 from '../../medias&files/portfolio4.png'
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'TransportService',
-    github: 'https://github.com/SlimPapiChulo/TransportService',
-    demo: 'https://transportservices.netlify.app/'
+    title: 'Api-MusicAndMovieSearch',
+    github: 'https://github.com/SlimPapii/api-musicandmovie',
+    demo: 'https://api-musicandmoviesearch.vercel.app/'
   },
   {
     id: 2,
     image: IMG2,
-    title: 'Login-page',
-    github: 'https://github.com/SlimPapiChulo/Login-page',
-    demo: 'https://loginpageauth.netlify.app/'
+    title: 'TransportService',
+    github: 'https://github.com/SlimPapii/TransportService',
+    demo: 'https://transportservices.netlify.app/'
   },
   {
     id: 3,
     image: IMG3,
+    title: 'Login-page',
+    github: 'https://github.com/SlimPapii/Login-page',
+    demo: 'https://loginpageauth.netlify.app/'
+  },
+  {
+    id: 4,
+    image: IMG4,
     title: 'Ode-to-zainab',
     github: 'https://github.com/SlimPapii/ZainabsProject',
     demo: 'https://ode-to-zainab.vercel.app/'
